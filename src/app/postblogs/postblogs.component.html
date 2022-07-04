@@ -1,0 +1,33 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="form-group">
+                <label class="hello-text">
+                    Hello {{currentUser.username}}
+                </label>
+                <form [formGroup]="postBlogForm">
+                    <input class="form-control form-control-lg"
+                        type="text"
+                        placeholder="Confirm Username"
+                        formControlName="blogUser">
+                    <input class="form-control form-control-lg"
+                        type="text"
+                        placeholder="Enter Title"
+                        formControlName="blogTitle">
+                    <textarea class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        placeholder="Blog Content"
+                        formControlName="blogContent">
+                    </textarea>
+
+                    <button class="btn btn-primary"
+                        type="submit"
+                        (click)="submitBlog()"
+                        [disabled]="!postBlogForm.valid">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

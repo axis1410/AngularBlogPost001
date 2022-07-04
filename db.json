@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "name": "AxisS",
+      "age": "29",
+      "username": "axis.1410",
+      "password": "1410axis",
+      "id": 1
+    }
+  ],
+  "blogPosts": [
+    {
+      "blogUser": "Sample User",
+      "blogTitle": "Sample Title",
+      "blogContent": "Sample content which can stretch through multiple lines\nThis is done by using the newline character \n in backend",
+      "id": 1
+    }
+  ],
+  "currentuser": []
+}

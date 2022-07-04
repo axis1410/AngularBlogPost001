@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center login-text">
+                    <b>Login</b>
+                </div>
+                <div class="text-center enter-credentials"> Enter your
+                    credentials</div>
+                <form [formGroup]="form" class="form-container"
+                    (ngSubmit)="login()">
+                    <div class="form-group">
+                        <input
+                            ngModel="{{form.value.username}}"
+                            formControlName="username"
+                            id="username"
+                            type="text"
+                            class="form-control form-control1"
+                            placeholder="Enter Username">
+
+                        <div *ngIf="f.username.touched && f.username.invalid"
+                            class="alert
+                            alert-danger">
+                            <div *ngIf="f.username.errors?.required">Username is
+                                required</div>
+                            <div *ngIf="f.username.errors?.minlength">Username
+                                must be at
+                                least {{ minLength }} characters</div>
+                            <div *ngIf="f.username.errors?.cannotContainSpace">Username
+                                cannot
+                                contain space
+                            </div>
+                        </div>
+
+                    </div>
+                    <br><br>
+                    <div class="form-group">
+                        <input
+                            formControlName="password"
+                            id="password"
+                            type="password"
+                            class="form-control"
+                            placeholder="Enter Password">
+                        <div *ngIf="f.password.touched && f.password.invalid"
+                            class="alert
+                            alert-danger">
+                            <div *ngIf="password?.errors?.['required']">Password
+                                is required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row btn-row">
+                        <div class="row">
+                            <button class="btn btn-warning"
+                                type="submit"
+                                [disabled]="!form.valid">Log In</button>
+                        </div>
+                        <div class="row">
+
+                            <button (click)="goToRegister()" class="btn
+                                btn-dark">
+                                Sign up
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

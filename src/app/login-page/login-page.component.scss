@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+.card {
+    margin-top: 50px;
+    margin-left: 300px;
+    border: 1px solid #ccc;
+    width: 500px;
+
+    padding: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-group {
+    margin-left: 30px;
+}
+.form-control {
+    align-items: center;
+    margin-left: 23px;
+    width: 350px;
+}
+.form-control1 {
+    margin-top: 50px;
+}
+
+.text-center {
+    color: rgb(0, 0, 0);
+}
+.enter-credentials {
+    margin-top: 20px;
+    font-size: 150%;
+}
+.login-text {
+    font-size: 225%;
+    margin-top: 25px;
+}
+.alert {
+    align-items: center;
+    margin-left: 23px;
+    width: 350px;
+}
+
+// .btn {
+//     width: 100px;
+//     flex: 1;
+// }
+// .btns {
+//     flex-direction: column;
+//     flex: 1;
+// }
+// .btn-warning {
+//     margin-top: 30px;
+// }
+// .btn-dark {
+//     // align-items: center;
+//     margin-top: 20px;
+
+.btn {
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.btn-row {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}

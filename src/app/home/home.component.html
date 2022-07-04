@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+
+            <div class="card border-primary" *ngFor="let blog of allBlogs">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h1>
+
+                            {{blog.blogTitle}}
+
+                        </h1>
+                    </div>
+                    <div class="card-text text-left" style="white-space:
+                        pre-line">
+                        {{blog.blogContent}}
+                    </div>
+                </div>
+
+                <footer class="blockquote-footer">
+                    <blockquote class="blockquote mb-0 text-end">
+                        Written by : {{blog.blogUser}}
+                    </blockquote>
+                </footer>
+            </div>
+
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <button class="btn btn-primary" (click)="postNewBlogPage()">Create
+                new blog</button>
+        </div>
+    </div>
+</div>
