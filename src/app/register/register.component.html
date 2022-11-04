@@ -10,7 +10,6 @@
                             </b>
                         </div>
                         <div class="row"> <div class="name-input">
-
                                 <input
                                     ngModel="{{registerForm.value.name}}"
                                     formControlName="name"
@@ -86,13 +85,11 @@
                                     f.password.invalid"
                                     class="alert
                                     alert-danger">
-                                    <div *ngIf="f.password.errors?.required">Password
-                                        is
-                                        required
+                                    <div *ngIf="f.password.errors?.required">
+                                        Password is required
                                     </div>
-                                    <div *ngIf="f.password.errors?.minlength">Password
-                                        must be at
-                                        least 8 characters
+                                    <div *ngIf="f.password.errors?.minlength">
+                                        Password must be at least 8 characters
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +104,6 @@
                             </div>
 
                             <div class="col-md-3">
-
                                 <button class="btn btn-info"
                                     (click)="goToLogin()">Login</button>
                             </div>

@@ -24,6 +24,7 @@ export class HeaderComponent implements OnInit {
             }
         );
     }
+
     loggedInStatus() {
         // check if user is logged in
         if (this.currentUser) {

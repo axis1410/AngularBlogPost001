@@ -4,7 +4,7 @@
       "name": "AxisS",
       "age": "29",
       "username": "axis.1410",
-      "password": "1410axis",
+      "password": "mypassword",
       "id": 1
     }
   ],
@@ -16,5 +16,11 @@
       "id": 1
     }
   ],
-  "currentuser": []
+  "currentuser": [
+    {
+      "username": "axis.1410",
+      "password": "mypassword",
+      "id": 1
+    }
+  ]
 }

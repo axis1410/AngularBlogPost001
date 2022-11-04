@@ -36,6 +36,6 @@ export class RegisterComponent {
             alert('Successfully registered!');
             this.goToLogin();
         });
-        console.log(this.registerForm.value);
+        // console.log(this.registerForm.value);
     }
 }

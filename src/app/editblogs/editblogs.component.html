@@ -1,44 +1,41 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-10"
-            *ngFor="let blog of allBlogs">
-            <div class="card border-primary" *ngIf="blog.blogUser ===
+  <div class="row">
+    <div class="col-md-10" *ngFor="let blog of allBlogs">
+      <div class="card border-primary" *ngIf="blog.blogUser ===
                 currentUser.username">
-                <div class="card-body">
-                    <div class="card-title">
-                        <h1>
-                            {{blog.blogTitle}}
-                        </h1>
-                    </div>
-                    <div class="card-text">
-                        <textarea class="blog-content-ta"
-                            id="blog-content">{{blog.blogContent}}</textarea>
-                    </div>
-                </div>
-
-                <footer class="blockquote-footer">
-                    <blockquote class="blockquote mb-0 text-end">
-                        Written by : {{blog.blogUser}}
-                    </blockquote>
-                </footer>
-
-                <div class="row button-row">
-
-                    <button class="btn btn-primary"
-                        (click)="editBlog(blog.id)">Edit
-                        blog</button>
-
-
-                    <button class="btn btn-primary"
-                        (click)="deleteBlog(blog.id)">Delete
-                        blog</button>
-
-                </div>
-            </div>
-
-            <br>
+        <div class="card-body">
+          <div class="card-title">
+            <h1>
+              {{blog.blogTitle}}
+            </h1>
+          </div>
+          <div class="card-text">
+            <textarea class="blog-content-ta" id="blog-content">{{blog.blogContent}}
+                        </textarea>
+          </div>
         </div>
-        <br>
+
+        <footer class="blockquote-footer">
+          <blockquote class="blockquote mb-0 text-end">
+            Written by : {{blog.blogUser}}
+          </blockquote>
+        </footer>
+
+        <div class="row button-row">
+
+          <button class="btn btn-primary" (click)="editBlog(blog.id)">Edit
+            blog</button>
+
+
+          <button class="btn btn-primary" (click)="deleteBlog(blog.id)">Delete
+            blog</button>
+
+        </div>
+      </div>
+
+      <br>
     </div>
     <br>
+  </div>
+  <br>
 </div>
